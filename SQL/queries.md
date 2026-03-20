@@ -26,3 +26,17 @@ SELECT * FROM orders LIMIT 10;
 
 -- 5. Поиск товаров по названию (для centerfish.ru)
 SELECT * FROM products WHERE name LIKE '%катушка%';
+
+---
+
+##🔹 INSERT - Добавление данных
+
+```sql
+-- 1. Добавить нового пользователя
+INSERT INTO users (name, email, status) VALUES ('Иван', 'ivan@example.com', 'active');
+
+-- 2. Добавить товар в каталог
+INSERT INTO products (name, price, category) VALUES ('Катушка', 1500, 'equipment');
+
+-- 3. Добавить заказ
+INSERT INTO orders (user_id, product_id, quantity, total) VALUES (1, 5, 2, 3000);
